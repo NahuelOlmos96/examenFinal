@@ -1,13 +1,17 @@
-<form action="/login/add" method="POST" class="container ">
-  <h2>nombre completo</h2>
-  <input type="text" name="nombre" />
-  <h2>DNI</h2>
-  <input type="text" name="dni" />
+
+<div class="contenedorLogin  row">
+
+
+<form class="row " action="/login/add" method="POST" class="container ">
+  <h5 class="col-6">Nombre Completo</h5>
+  <h5 class="col-6">DNI</h5>
+  <input class="col-6" type="text" name="nombre" />
+  <input class="col-6" type="text" name="dni" />
 
   
-  <select type="text" name="sexo" class="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
-    <option  value="masculino">hombre</option>
+  <select class="col-12" type="text" name="sexo" class="form-select" aria-label="Default select example">
+    <option >sexo</option>
+    <option  value="masculino">masculino</option>
     <option  value="femenino">femenino</option>
     <option  value="otro">otro</option>
   </select>
@@ -17,3 +21,5 @@
     entrar
   </button>
 </form>
+
+</div>

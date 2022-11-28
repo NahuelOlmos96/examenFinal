@@ -1,0 +1,9 @@
+.contenedorLogin{
+        margin: auto 400px;
+        font-size: 1.5rem;
+
+}
+
+input ,select{
+    margin: 10px 0;
+}

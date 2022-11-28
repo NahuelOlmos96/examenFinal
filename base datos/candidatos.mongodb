@@ -35,6 +35,7 @@ db.candidatos.insertMany([
   'nombreCandidato': 'perez free ',
  'img':'https://miro.medium.com/max/1400/1*JB-vqhx7gCiF5zmTUvTdiw.jpeg',
   'numvotos': 0
-    }
+    },
+    
 ]);
 

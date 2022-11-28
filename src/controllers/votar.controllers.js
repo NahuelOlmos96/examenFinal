@@ -51,11 +51,8 @@ votarCtrl.alertavoto = (req, res) => {
 
 votarCtrl.mostrarEstadisticas = async (req, res) => {
   const mostrarcandidatos = await candidatos.find().lean();
-  const porcentajesvotos = await votos.find().lean();
-  porcentajeEstadistica = ((porcentajesvotos[0].porcentajevotos).toString())
- 
-
-  res.render("estadisticas", { mostrarcandidatos, porcentajeEstadistica });
+  
+  res.render("estadisticas", { mostrarcandidatos });
 };
 
 votarCtrl.editarEstadisticas = async (req, res) => {
@@ -82,7 +79,8 @@ votarCtrl.editarEstadisticas = async (req, res) => {
 
   await candidatos.findByIdAndUpdate({ _id: req.body.id }, { votos: sumvotos });
   
-await votos.findByIdAndUpdate({ _id: 1 }, { votosTotal: votostotal , porcentajevotos: porcetanjepasar });
+await votos.findByIdAndUpdate({ _id: 1 }, { votosTotal: votostotal});
+await candidatos.findByIdAndUpdate({ _id: 5 }, {  porcentajevotos: porcetanjepasar });
   
   res.redirect("/estadisticas");
 };

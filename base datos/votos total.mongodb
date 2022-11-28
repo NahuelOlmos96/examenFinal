@@ -13,6 +13,8 @@ db.votos.drop();
 // Insert a few documents into the sales collection.
 db.votos.insertMany([
   { '_id': 1, 
-    "votosTotal": 0, }
+    "votosTotal": 0,
+     
+    }
 ]);
 
