@@ -1,0 +1,38 @@
+<h1 class="container">lista de los votantes</h1>
+
+
+<div class="container row ">
+{{#each mostrarcandidatos }}
+ 
+
+  <form class="col-6" action="/estadisticas/{{_id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        
+        <input type="hidden" name="voto" value={{votos}}>
+       <input type="hidden" name="id" value={{_id}}>
+       
+        
+    
+      <div class="card">
+        <img class="card-img-top" src="{{img}}" alt="" />
+        <div class="card-body">
+          
+          <div class="card-text">
+         
+                <div>{{nombrePartido}}</div> 
+                <div>{{nombreCandidato}}</div> 
+                <div>{{numvotos}}</div> 
+                  
+          </div>
+          
+
+          
+         <button type="submit"> votan</button>
+
+        </div>
+      </div>
+  </form>
+      
+  
+{{/each}}
+</div>

@@ -1,0 +1,18 @@
+<h1>estadisticas</h1>
+<h1>{{porcentajeEstadistica}}</h1>
+
+
+<div class="container row">
+  {{#each mostrarcandidatos}}
+    <div class="col-6 text-center card">
+      <div class="card-img-top"></div>
+      <img src="{{img}}" alt="" />
+      <div class="card-body">
+        <h1> {{nombrePartido}} </h1>
+        <h2>{{votos}}</h2>
+    <h1>{{{porcentajeEstadistica}}}</h1>
+
+      </div>
+    </div>
+  {{/each}}
+</div>

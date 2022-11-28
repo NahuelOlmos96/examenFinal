@@ -1,0 +1,40 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('eleciones');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.candidatos.drop();
+
+// Insert a few documents into the sales collection.
+db.candidatos.insertMany([
+  { '_id': 1, 
+  'nombrePartido': 'grupo amarte de las verduras',
+  'nombreCandidato': 'vegano martinez',
+  'img':'https:/www.hogarmania.com/archivos/202202/calendario-fruta-verduras-temporada-668x400x80xX-1.jpg',
+  'numvotos': 0
+    },
+  { '_id': 2, 
+  'nombrePartido': 'los antiterere',
+  'nombreCandidato': 'rogelio matere',
+  'img':'://fotos.perfil.com//2022/01/13/900/0/terere-1298129.jpeg',
+  'numvotos': 0
+    },
+    { '_id': 3, 
+  'nombrePartido': 'liberacion de calorias',
+  'nombreCandidato': 'perez fitt',
+'img':'https://static1.diariovasco.com/www/multimedia/201906/21/media/cortadas/calorias-k6X-R3JBp99fXMkqTy05rjNLOKJ-624x385@Diario%20Vasco.jpg',
+  'numvotos': 0
+    },
+    { '_id': 4, 
+  'nombrePartido': 'los anti-gobernacion',
+  'nombreCandidato': 'perez free ',
+ 'img':'https://miro.medium.com/max/1400/1*JB-vqhx7gCiF5zmTUvTdiw.jpeg',
+  'numvotos': 0
+    }
+]);
+
