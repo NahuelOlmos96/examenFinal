@@ -1,18 +1,27 @@
-
-
-
-
 <div class="container row">
+
+
   {{#each mostrarcandidatos}}
     <div class="col-6 text-center card">
       <div class="card-img-top"></div>
-      <img src="{{img}}" alt="" />
+      <img class="imagenCandidatos" src="{{imagencanditato}}" alt="" />
       <div class="card-body">
         <h1> {{nombrePartido}} </h1>
-        <h2>{{votos}}</h2>
-    <h1>{{porcentajevotos}}</h1>
+       
+        
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: {{porcentajevotos}}%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >{{porcentajevotos}}%</div>
+        </div>
 
       </div>
     </div>
   {{/each}}
+
 </div>

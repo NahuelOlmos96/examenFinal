@@ -11,10 +11,7 @@ const vostosSchema = new Schema({
                 type: Number,
                 require:true
         },
-        porcentajevotos: {
-                type: Number,
-                require:true
-        },
+      
         
 })
 

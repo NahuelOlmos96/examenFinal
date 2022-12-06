@@ -19,10 +19,15 @@ const votantesSchema = new Schema({
                 type: String,
                 require:true
         },
-        votos: {
+        numvotos: {
+                type: Number,
+                require:true
+        },
+        porcentajevotos:{
                 type: Number,
                 require:true
         }
+
 })
 
 

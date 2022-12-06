@@ -8,8 +8,13 @@
   <form class="col-6" action="/estadisticas/{{_id}}?_method=PUT" method="POST">
         <input type="hidden" name="_method" value="PUT">
         
-        <input type="hidden" name="voto" value={{votos}}>
+        <input type="hidden" name="voto" value={{numvotos}}>
        <input type="hidden" name="id" value={{_id}}>
+       <input type="hidden" name="sexo" value={{../sexoNewVotante}}>
+       <input type="hidden" name="nombre" value={{../nombreNewvotante}}>
+       <input type="hidden" name="dni" value={{../dniNewVotante}}>
+       
+       
        
         
     
@@ -20,7 +25,9 @@
           <div class="card-text text-center">
          
                 <div>{{nombrePartido}}</div> 
-                <div>{{nombreCandidato}}</div> 
+                <div>{{nombreCandidato}}</div>
+
+               
                 
                   
           

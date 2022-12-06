@@ -16,25 +16,33 @@ db.candidatos.insertMany([
   'nombrePartido': 'grupo amarte de las verduras',
   'nombreCandidato': 'vegano martinez',
   'img':'https:/www.hogarmania.com/archivos/202202/calendario-fruta-verduras-temporada-668x400x80xX-1.jpg',
-  'numvotos': 0
+  'imagencanditato':"https://eldiariony.com/wp-content/uploads/sites/2/2015/12/shutterstock_63725509.jpg?quality=80&strip=all&w=960",
+  'numvotos': 0,
+  'porcentajevotos': 0
     },
   { '_id': 2, 
   'nombrePartido': 'los antiterere',
   'nombreCandidato': 'rogelio matere',
-  'img':'://fotos.perfil.com//2022/01/13/900/0/terere-1298129.jpeg',
-  'numvotos': 0
+  'img':'https://fotos.perfil.com//2022/01/13/900/0/terere-1298129.jpeg',
+  'imagencanditato':"https://th.bing.com/th/id/R.054e068ec2688b140229ddf08e86233b?rik=k2EcL%2fkbU3N9Qg&pid=ImgRaw&r=0",
+  'numvotos': 0,
+  'porcentajevotos': 0
     },
     { '_id': 3, 
   'nombrePartido': 'liberacion de calorias',
   'nombreCandidato': 'perez fitt',
 'img':'https://static1.diariovasco.com/www/multimedia/201906/21/media/cortadas/calorias-k6X-R3JBp99fXMkqTy05rjNLOKJ-624x385@Diario%20Vasco.jpg',
-  'numvotos': 0
+'imagencanditato':"https://th.bing.com/th/id/OIP.EbMBefNYpCadPyLEU17bfAHaHa?pid=ImgDet&rs=1",
+  'numvotos': 0,
+  'porcentajevotos': 0
     },
     { '_id': 4, 
   'nombrePartido': 'los anti-gobernacion',
   'nombreCandidato': 'perez free ',
  'img':'https://miro.medium.com/max/1400/1*JB-vqhx7gCiF5zmTUvTdiw.jpeg',
-  'numvotos': 0
+ 'imagencanditato':"https://th.bing.com/th/id/R.560a9dbd8fa4495d7c214277a571cd16?rik=%2bN%2beLB6q9mkgwQ&riu=http%3a%2f%2fsupercurioso.com%2fwp-content%2fuploads%2f2015%2f12%2fo-ATTRACTIVE-MAN-facebook-Copy.jpg&ehk=Yxki5RhzwE72%2bdxb2YUciJRuem2cCOthMwj0lv%2fSNuo%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+  'numvotos': 0,
+  'porcentajevotos': 0
     },
     
 ]);

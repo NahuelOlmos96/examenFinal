@@ -5,15 +5,14 @@
 <form class="row " action="/login/add" method="POST" class="container ">
   <h5 class="col-6">Nombre Completo</h5>
   <h5 class="col-6">DNI</h5>
-  <input class="col-6" type="text" name="nombre" />
-  <input class="col-6" type="text" name="dni" />
+  <input  class="col-6" type="text" name="nombre" required />
+  <input class="col-6" type="number" name="dni"  required />
 
   
-  <select class="col-12" type="text" name="sexo" class="form-select" aria-label="Default select example">
-    <option >sexo</option>
-    <option  value="masculino">masculino</option>
-    <option  value="femenino">femenino</option>
-    <option  value="otro">otro</option>
+  <select  class="col-12" type="text" name="sexo" class="form-select" aria-label="Default select example">sexo
+    <option   value="masculino">M</option>
+    <option  value="femenino">F</option>
+    
   </select>
 
   <br />

@@ -17,8 +17,8 @@ const votantesSchema =new Schema({
                 require:true
         },
         voto: {
-                type:String,
-                default:false
+                type:Number,
+                default:1
         }
        
 })
